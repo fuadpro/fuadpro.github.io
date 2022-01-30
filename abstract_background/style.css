@@ -1,0 +1,50 @@
+*{  margin: 0;    padding: 0;    box-sizing: border-box;}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    overflow: hidden;}
+.layer{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);}
+.layer.lyt1{
+    background: #03a9f4;
+    transform: skewX(-55deg) translateX(0px);
+    z-index: 1;}
+.layer.lyt2{
+    background: #fff;
+    transform: skewX(-55deg) translateX(-100px);
+    z-index: 3;}
+.layer.lyt3{
+    background: #ff3161;
+    transform: skewX(-55deg) translateX(-200px);
+    z-index: 5;}
+.layer.lyt4{
+    background: #222;
+    transform: skewX(-55deg) translateX(-300px);
+    z-index: 10;}
+.layer.lyt5{
+    background: #ff3161;
+    transform: skewX(55deg) translateX(0px);
+    z-index: 2;}
+.layer.lyt6{
+    background: #03a9f4;
+    transform: skewX(55deg) translateX(-100px);
+    z-index: 4;}
+.layer.lyt7{
+    background: #fff;
+    transform: skewX(55deg) translateX(-200px);
+    z-index: 6;}
+.layer.lyt8{
+    background: #222;
+    transform: skewX(55deg) translateX(-300px);
+    z-index: 8;}
+.layer.lyt9{
+    background: transparent;
+    transform: skewX(55deg) translateX(-300px);
+    z-index: 10;}
