@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div class="main dflex">
+      <div class="container dflex">
+        <div class="clock dflex">
+          <div id="sc" class="circle" style="--clr: #04fc43"><i></i></div>
+          <div id="mn" class="circle circle2" style="--clr: #fee800"><i></i></div>
+          <div id="hr" class="circle circle3" style="--clr: #ff2972"><i></i></div>
+  
+          <div id="digitClock"></div>
+        </div>
+  
+        <div id="time">
+          <div id="hours" style="--clr: #ff2972">00</div>
+          <div id="minutes" style="--clr: #fee800">00</div>
+          <div id="seconds" style="--clr: #04fc43">00</div>
+          <div id="ampm" class="dflex">AM</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
