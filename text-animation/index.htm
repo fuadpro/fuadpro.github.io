@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text Animation & Typed JS</title>
+  </head>
+  <body>
+    <section>
+      <h1>Welcome to <span class="element"></span></h1>
+    </section>
+    
+    <section class="container">
+      <p>Hello, I'm</p>
+      <div class="animation">
+        <div class="first">
+          <div>@fuadpro</div>
+        </div>
+        <div class="second">
+          <div>Web Developer</div>
+        </div>
+        <div class="third">
+          <div>PC Gamer</div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+    <script>
+      (function ($) {
+        $(function () {
+          //  Typed JS
+          $(".element").typed({
+            strings: ["SITE!", "STUDIO!", "PROJECT!"],
+            typeSpeed: 150,
+            backSpeed: 50,
+            backDelay: 500,
+            startDelay: 1000,
+            loop: true,
+            // cursorChar: "|",
+            cursorChar: "_",
+          });
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>
