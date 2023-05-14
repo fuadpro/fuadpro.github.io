@@ -133,6 +133,7 @@ section.resume-section {
     border-bottom: 3px solid transparent;
     transition: 0.5s;
     cursor: pointer;
+    color: #6c757d;
 }
 
 .projects .menu .button:hover,
