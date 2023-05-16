@@ -178,14 +178,14 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Project & Certifications</h2>
                     <div class="projects">
-                        <div class="menu">
-                            <button class="btn active" data-name="all">All</button>
-                            <button class="btn" data-name="react">React</button>
-                            <button class="btn" data-name="js">Javascript & JQuery</button>
-                            <button class="btn" data-name="html">HTML, CSS, Bootstrap, JS (template)</button>
+                        <div class="menu button-group filters-button-group">
+                            <button class="button active" data-filter="*">All</button>
+                            <button class="button" data-filter=".react">React</button>
+                            <button class="button" data-filter=".js">Javascript & JQuery</button>
+                            <button class="button" data-filter=".html">HTML, CSS, Bootstrap, JS (template)</button>
                         </div>
-                        <div class="items">
-                            <div class="item react">
+                        <div class="grid">
+                            <div class="item element-item react " data-category="react">
                                 <img src="./assets/img/react-01.jpg" alt="pizza">
                                 <div class="item-about">
                                     <h5>Pizza App</h5>
@@ -193,70 +193,70 @@
                                 </div>
                              </div>
 
-                            <div class="item js">
+                            <div class="item element-item js" data-category="js">
                                 <img src="./assets/img/js-01.jpg" alt="js">
                                 <div class="item-about">
                                     <h5>Filterable Gallery</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/filterable-gallery/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html" data-category="html">
                                 <img src="./assets/img/html-07.jpg" alt="starbucks">
                                 <div class="item-about">
                                     <h5>Starbucks Home OnePage</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/starbucks-homepage-clone/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html" data-category="html">
                                 <img src="./assets/img/html-01.jpg" alt="polo">
                                 <div class="item-about">
                                     <h5>Polo Website</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/polo360-template/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item js">
+                            <div class="item element-item js" data-category="js">
                                 <img src="./assets/img/js-02.jpg" alt="js">
                                 <div class="item-about">
                                     <h5>To Do App JS</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/projects/todoapp/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html">
                                 <img src="./assets/img/html-02.jpg" alt="fitness">
                                 <div class="item-about">
                                     <h5>Fitness Website Template</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/fitness-site-project/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html">
                                 <img src="./assets/img/html-03.jpg" alt="switch">
                                 <div class="item-about">
                                     <h5>Switch Website Template</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/Switch-site/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html" data-category="html">
                                 <img src="./assets/img/html-04.jpg" alt="medical">
                                 <div class="item-about">
                                     <h5>Medical Website Template</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/medical-site-bootstrap/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html" data-category="html">
                                 <img src="./assets/img/html-05.jpg" alt="darx">
                                 <div class="item-about">
                                     <h5>Darx Grid Website Template</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/Darx-site/">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item html">
+                            <div class="item element-item html" data-category="html">
                                 <img src="./assets/img/html-06.jpg" alt="restaurant">
                                 <div class="item-about">
                                     <h5>Restaurant Website Template</h5>
                                     <a target="_blank" href="https://fuadpro.github.io/Restaurant-site/index.htm">Live Preview</a>
                                 </div>
                             </div>
-                            <div class="item js">
+                            <div class="item element-item js" data-category="js">
                                 <img src="./assets/img/js-03.jpg" alt="pass">
                                 <div class="item-about">
                                     <h5>Password Validation JS</h5>
@@ -266,7 +266,7 @@
 
                             
                            
-                            <div class="item react">
+                            <div class="item element-item react">
                                <a target="_blank"  href=""><img src="./" alt=""></a>
                                <div class="item-about">
                                     <h5>Name</h5>
@@ -275,22 +275,26 @@
                             </div>
                             
                             
-                            <div class="item react">
+                            <div class="item element-item react">
                                 <a target="_blank"  href=""><img src="./" alt=""></a>
                                 <div class="item-about">
                                      <h5>Name</h5>
                                      <a target="_blank" href="">Live Preview</a>
                                  </div>
                              </div>
-
                         </div>
                         <h4 class="mt-5">soon adding new projects </h4>
                     </div>
                 </div>
             </section>
+
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JQuery JS-->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!-- Isotope core JS-->
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <!-- Core theme JS-->
         <script src="./assets/js/scripts.js"></script>
     </body>

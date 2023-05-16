@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+    .element-item {
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      background: #888;
+    }
+  </style>
+</head>
+<body >
+
+  <div class="button-group filters-button-group">
+    <button class="button" data-filter="*">All</button>
+    <button class="button" data-filter=".react">React</button>
+    <button class="button" data-filter=".js">JS</button>
+    <button class="button" data-filter=".html">Html</button>
+  
+  </div>
+  
+  <div class="grid">
+    <div class="element-item react " data-category="react">
+      <h3 class="name"> React01</h3>
+      <p class="symbol">Hg</p>
+    </div>
+    <div class="element-item react " data-category="react">
+      <h3 class="name">Tellurium</h3>
+      <p class="symbol">Te</p>
+    </div>
+    <div class="element-item js " data-category="js">
+      <h3 class="name">Bismuth</h3>
+      <p class="symbol">Bi</p>
+    </div>
+    <div class="element-item js " data-category="js">
+      <h3 class="name">Lead</h3>
+      <p class="symbol">Pb</p>
+    </div>
+    <div class="element-item html " data-category="html">
+      <h3 class="name">Gold</h3>
+      <p class="symbol">Au</p>
+    </div>
+  
+  
+  
+  
+  </div>
+  
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+
+
+let $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows'
+});
+
+// bind filter button click
+$('.filters-button-group').on( 'click', 'button', function() {
+  let filterValue = $( this ).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+</script>
+
+</body>
+</html>
